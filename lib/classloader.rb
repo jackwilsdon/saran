@@ -13,7 +13,7 @@ module Saran
     def classes
       all_classes = []
 
-      @files.values.each do |mod|
+      files.values.each do |mod|
         mod.constants.each do |const_name|
           const_value = mod.const_get const_name
 
